@@ -1,0 +1,26 @@
+{
+  "name": "jiconop",
+  "version": "0.0.0",
+  "description": "Node.js app for establishing XMPP connection and returning the connection details to the client",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/BlueJimp/jiconop"
+  },
+  "keywords": [
+    "xmpp",
+    "browser",
+    "optimization",
+    "connection"
+  ],
+  "author": "Hristo Terezov",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "node-xmpp-client": "*",
+    "http": "*",
+    "fs": "*"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+  }
+}
