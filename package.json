@@ -17,7 +17,8 @@
   "dependencies": {
     "node-xmpp-client": "*",
     "http": "*",
-    "fs": "*"
+    "fs": "*",
+    "yargs": "*"
   },
   "devDependencies": {
   },

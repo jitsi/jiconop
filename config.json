@@ -1,5 +1,0 @@
-{
-    "boshUrl": "http://example.jitsi.net/http-bind/",
-    "XMPPDomain": "example.jitsi.net",
-    "port": 9615
-}
