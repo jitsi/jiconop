@@ -19,7 +19,7 @@ var argv = require('yargs')
     .example('$0 -b http://example.jitsi.net/http-bind/ -x example.jitsi.net')
     .argv;
 
-config = {
+var config = {
     boshUrl: argv.bosh_url,
     XMPPDomain: argv.xmpp_domain,
     port: argv.port || 9615
