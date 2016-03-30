@@ -1,0 +1,6 @@
+*.js							/usr/share/jiconop/
+*.html							/usr/share/jiconop/
+lib							/usr/share/jiconop/
+node_modules						/usr/share/jiconop/
+debian/jiconop-nginx.conf				/etc/jitsi/jiconop/
+debian/jiconop.conf					/etc/init/

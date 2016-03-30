@@ -1,0 +1,14 @@
+Source: jiconop
+Section: net
+Priority: extra
+Maintainer: Jitsi Team <jimpdev@jitsi.org>
+Uploaders: Emil Ivov <emcho@jitsi.org>, Damian Minkov <damencho@jitsi.org>
+Build-Depends: debhelper (>= 8.0.0), npm
+Standards-Version: 3.9.6
+Homepage: https://jitsi.org/meet
+
+Package: jiconop
+Architecture: all
+Depends: ${misc:Depends}, jitsi-meet, nodejs
+Description: WebRTC JavaScript video conferences 
+ Configures jiconop.
