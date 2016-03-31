@@ -30,6 +30,7 @@ service jiconop start
 Make sure you meet the following steps: 
 - you do not have /etc/nginx/sites-enabled/default (delete it)
 - nginx config:
+```
 #server {
 #    listen 80;
 #    server_name <your-domain>;
@@ -48,5 +49,5 @@ server {
         proxy_set_header Host beta.meet.jit.si;
     }
 }
-
+```
 - config.js add property externalConnectUrl:"//<your-domain>/http-pre-bind"
