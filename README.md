@@ -20,8 +20,8 @@ node index.js
 sudo su
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 apt-get install -y nodejs
-wget -qO - https://repo.jitsi.net/debian/unstable/archive.key | sudo apt-key add -
-echo 'deb http://download.jitsi.org/nightly/deb unstable/' > /etc/apt/sources.list.d/jitsi-backup.list
+wget -qO - https://download.jitsi.org/jitsi-key.gpg.key | sudo apt-key add -
+echo 'deb https://download.jitsi.org stable/' > /etc/apt/sources.list.d/jitsi.list
 apt-get update
 apt-get install jiconop
 service jiconop start
