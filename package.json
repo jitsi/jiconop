@@ -15,7 +15,7 @@
   "author": "Hristo Terezov",
   "readmeFilename": "README.md",
   "dependencies": {
-    "node-xmpp-client": "*",
+    "node-xmpp-client": "git://github.com/hristoterezov/client.git",
     "http": "*",
     "fs": "*",
     "yargs": "*"
