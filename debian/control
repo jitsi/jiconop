@@ -9,6 +9,6 @@ Homepage: https://jitsi.org/meet
 
 Package: jiconop
 Architecture: all
-Depends: ${misc:Depends}, jitsi-meet, nodejs
+Depends: ${misc:Depends}, jitsi-meet-web, nodejs
 Description: WebRTC JavaScript video conferences 
  Configures jiconop.
