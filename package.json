@@ -17,7 +17,6 @@
   "dependencies": {
     "node-xmpp-client": "git://github.com/hristoterezov/client.git",
     "http": "*",
-    "fs": "*",
     "yargs": "*"
   },
   "devDependencies": {
