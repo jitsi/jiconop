@@ -22,8 +22,21 @@ case "$1" in
 
         # checks whether the custom include is available in the config
         # if not available add it
-        JVB_ETC_CONFIG="/etc/jitsi/videobridge/config"
-        . $JVB_ETC_CONFIG
+
+        # debconf hostname question
+        . /usr/share/debconf/confmodule
+
+        # try to get host from jitsi-videobridge
+        db_get jitsi-videobridge/jvb-hostname
+        if [ -z "$RET" ] ; then
+            # server hostname
+            db_set jitsi-videobridge/jvb-hostname "localhost"
+            db_input critical jitsi-videobridge/jvb-hostname || true
+            db_go
+        fi
+        JVB_HOSTNAME="$RET"
+        # and we're done with debconf
+        db_stop
 
         JITSI_MEET_NGINX_CONFIG="/etc/nginx/sites-available/$JVB_HOSTNAME.conf"
 

@@ -1,0 +1,4 @@
+Template: jitsi-videobridge/jvb-hostname
+Type: string
+_Description: Hostname:
+ The jiconop package needs the DNS hostname of your instance.
