@@ -1,0 +1,13 @@
+[Unit]
+Description=jiconop Node System Service
+
+[Service]
+EnvironmentFile=/etc/jitsi/jiconop/config
+ExecStart=/usr/bin/node /usr/share/jiconop/index.js --bosh_url $JICONOP_BOSH_URL --xmpp_domain $JICONOP_XMPP_DOMAIN --port $JICONOP_PORT
+Type=simple
+User=jiconop
+Group=jitsi
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
