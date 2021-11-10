@@ -2,6 +2,7 @@
   "name": "jiconop",
   "version": "0.0.0",
   "description": "Node.js app for establishing XMPP connection and returning the connection details to the client",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git://github.com/BlueJimp/jiconop"
